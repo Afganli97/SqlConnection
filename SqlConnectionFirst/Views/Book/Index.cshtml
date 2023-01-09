@@ -1,0 +1,10 @@
+﻿@model List<Book>
+@{
+    ViewData["Title"] = "Index";
+}
+
+@foreach (var item in Model)
+{
+    <p>@item.Id @item.Name @item.Writer</p>
+}
+
