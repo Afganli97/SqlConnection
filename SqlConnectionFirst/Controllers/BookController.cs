@@ -21,7 +21,7 @@ namespace SqlConnectionFirst.Controllers
 
         public IActionResult Detail(int id)
         {
-            return View(_dataBase.Books.ToList().Find(x=>x.Id==id));
+            return View(_dataBase.Books.Find(id));
         }
     }
 }
